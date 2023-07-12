@@ -1,0 +1,86 @@
+:root {
+    /*Cores primárias*/
+    --ciano-escuro: #3C8067FF;
+    --darker-ciano: #214538;
+    --creme: #F2EBE3FF;
+
+    /*Neutras*/
+    --azul-muito-escuro: #1C232BFF;
+    --azul-acinzentado-escuro: #6C7289FF;
+
+    /*Fontes*/
+    --montserrat: Montserrat, serif;
+    --fraunces: Fraunces, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    background-color: var(--creme);
+}
+
+.componente-container {
+    width: 37.5rem;
+    height: 28.125rem;
+    border-radius: 0.625rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    align-self: center;
+}
+
+.main-container {
+    width: 18.75rem;
+    height: 28.125rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    align-self: center;
+}
+
+@media (min-width: 768px) and (max-width: 7680px) {
+    .img-desk {
+        width: 50%;
+        border-radius: 0.625rem 0 0 0.625rem;
+    }
+
+    .img-mobile {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-desk {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .img-mobile {
+        width: 21.4375rem;
+        height: 15rem;
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+
+    .componente-container {
+        width: 21.375rem;
+        height: 38.25rem;
+        border-radius: 0.625rem;
+        background: #FFF;
+        flex-direction: column;
+    }
+
+    footer {
+        display: none;
+    }
+}
